@@ -1,0 +1,12 @@
+//
+//  app.shared.xcconfig
+//  TestEnvironment
+//
+//  Created by Rafael Fernandez Alvarez on 20/02/2018.
+//  Copyright © 2018 Rafael Fernandez Alvarez. All rights reserved.
+//
+
+BASE_APP_NAME = BaseProject
+BASE_PRODUCT_PACKAGE_NAME = es.sdos.baseProject
+VERSION_NUMBER = 1.0.0
+BUILD_NUMBER = 1

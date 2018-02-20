@@ -26,6 +26,11 @@
 		B133BD9B203C211D00768F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B133BD9D203C211D00768F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B133BD9E203C211D00768F86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B133BDA8203C438F00768F86 /* app.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = app.debug.xcconfig; sourceTree = "<group>"; };
+		B133BDA9203C43A900768F86 /* app.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = app.release.xcconfig; sourceTree = "<group>"; };
+		B133BDAA203C43BB00768F86 /* app.preproduction.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = app.preproduction.xcconfig; sourceTree = "<group>"; };
+		B133BDAB203C43D100768F86 /* app.shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = app.shared.xcconfig; sourceTree = "<group>"; };
+		B133BDAC203C5F0100768F86 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		B133BD8E203C211D00768F86 /* TestEnvironment */ = {
 			isa = PBXGroup;
 			children = (
+				B133BDA7203C431C00768F86 /* Config */,
 				B133BD8F203C211D00768F86 /* AppDelegate.h */,
 				B133BD90203C211D00768F86 /* AppDelegate.m */,
 				B133BD92203C211D00768F86 /* ViewController.h */,
@@ -67,8 +73,20 @@
 				B133BD9A203C211D00768F86 /* LaunchScreen.storyboard */,
 				B133BD9D203C211D00768F86 /* Info.plist */,
 				B133BD9E203C211D00768F86 /* main.m */,
+				B133BDAC203C5F0100768F86 /* Constants.h */,
 			);
 			path = TestEnvironment;
+			sourceTree = "<group>";
+		};
+		B133BDA7203C431C00768F86 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B133BDA8203C438F00768F86 /* app.debug.xcconfig */,
+				B133BDA9203C43A900768F86 /* app.release.xcconfig */,
+				B133BDAA203C43BB00768F86 /* app.preproduction.xcconfig */,
+				B133BDAB203C43D100768F86 /* app.shared.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +190,7 @@
 /* Begin XCBuildConfiguration section */
 		B133BDA0203C211D00768F86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B133BDA8203C438F00768F86 /* app.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -227,6 +246,7 @@
 		};
 		B133BDA1203C211D00768F86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B133BDA9203C43A900768F86 /* app.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -302,6 +322,70 @@
 			};
 			name = Release;
 		};
+		B133BDA5203C417500768F86 /* Preproduction */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Preproduction;
+		};
+		B133BDA6203C417500768F86 /* Preproduction */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B133BDAA203C43BB00768F86 /* app.preproduction.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5G9RYLF8Y;
+				INFOPLIST_FILE = TestEnvironment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.sdos.TestEnvironment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Preproduction;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -310,6 +394,7 @@
 			buildConfigurations = (
 				B133BDA0203C211D00768F86 /* Debug */,
 				B133BDA1203C211D00768F86 /* Release */,
+				B133BDA5203C417500768F86 /* Preproduction */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -319,6 +404,7 @@
 			buildConfigurations = (
 				B133BDA3203C211D00768F86 /* Debug */,
 				B133BDA4203C211D00768F86 /* Release */,
+				B133BDA6203C417500768F86 /* Preproduction */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

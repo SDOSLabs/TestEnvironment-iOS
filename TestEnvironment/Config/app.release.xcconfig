@@ -1,0 +1,14 @@
+//
+//  app.release.xcconfig
+//  TestEnvironment
+//
+//  Created by Rafael Fernandez Alvarez on 20/02/2018.
+//  Copyright © 2018 Rafael Fernandez Alvarez. All rights reserved.
+//
+
+#include "app.shared.xcconfig"
+
+APP_NAME = $(BASE_APP_NAME)
+PRODUCT_PACKAGE_NAME = $(BASE_PRODUCT_PACKAGE_NAME)
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) APP_RELEASE=1
+FACEBOOK_TOKEN=1127899277393

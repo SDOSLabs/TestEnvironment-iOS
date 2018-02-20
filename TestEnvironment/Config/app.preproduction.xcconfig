@@ -1,0 +1,15 @@
+//
+//  app.preproduction.xcconfig
+//  TestEnvironment
+//
+//  Created by Rafael Fernandez Alvarez on 20/02/2018.
+//  Copyright © 2018 Rafael Fernandez Alvarez. All rights reserved.
+//
+
+#include "app.shared.xcconfig"
+
+APP_NAME = PRE $(BASE_APP_NAME)
+PRODUCT_PACKAGE_NAME = $(BASE_PRODUCT_PACKAGE_NAME).test
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) APP_PREPRODUCTION=1
+FACEBOOK_TOKEN=77438783399383893
+
