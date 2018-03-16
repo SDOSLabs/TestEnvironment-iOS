@@ -1,0 +1,1 @@
+Este proyecto es el ejemplo del post publicado en el siguiente enlace: http://sdos.es/como-configurar-entornos-de-desarrollo-en-ios/
